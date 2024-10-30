@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+}
+.scrolled {
+    background-color: #0d1224;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: #0d1224;
+}
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    z-index: 10px;
+    background: transparent;
+}
+header .logo{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo >img{
+    width: 180px;
+    height: auto;
+}
+header .menu{
+    width: 52%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+header .menu ul{
+    display: flex;
+    gap: 20px;
+    float: right;
+}
+header .menu ul li {
+    list-style: none;
+}
+header .menu ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.section-1 .top{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.section-1 .top .left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: azure;
+}
+.section-1 .top .left >h3{
+    font-size: 30px;
+}
+.section-1 .top .left >button{
+    width: 15rem;
+    height: 37px;
+    border-radius: 8px;
+    border: 1px solid #5e72e4;
+    background: none;
+    color: azure;
+}
+.section-1 .top .right{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-1 .top .right >img{
+    width: 500px;
+    height: auto;
+}
+.section-1 .bottom{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-1 .bottom .history-card{
+    width: 77%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.section-1 .bottom .history-card .main-body{
+    width: 20rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #5e72e4a5;
+    background-color: #11152c;
+}
+.main-body{
+    transition: 0.5s all;
+    box-shadow: rgba(112, 105, 229, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+.main-body:hover{
+    box-shadow: rgba(111, 105, 229, 0.34) 0px 5px 15px;
+}
+.section-1 .bottom .history-card .main-body .left-part{
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    color: azure;
+}
+.section-1 .bottom .history-card .main-body .left-part h2{
+    color: #5e72e4;
+    font-weight: 500;
+}
+.section-1 .bottom .history-card .main-body .right-part{
+    width: 35%;
+    height: 80%;
+    padding: 10px;
+}
+.section-1 .bottom .history-card .main-body .right-part > img{
+    width: 60px;
+    height: auto;
+    background-color: #0d1224;
+    border-radius: 6px;
+}
+.section-2{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1224;
+    color: #5e72e4;
+}
+.section-2 .caption{
+    width: 22%;
+    height: 100px;
+    text-align: center;
+}
+.section-2 .caption >h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #7069e5;
+}
+.section-2 .caption >p{
+    color: rgb(196, 196, 210);
+}
+.section-2 .main-container{
+    width: 78%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-2 .main-container .card{
+    width: 32%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #7069e5;
+    background-color: #11152c;
+}
+.section-2 .main-container .card .image{
+    width: 100%;
+    height: 55%;
+}
+.section-2 .main-container .card .image >img{
+    width: 100%;
+    height: 100%;
+}
+.section-2 .main-container .card .info{
+    width: 90%;
+    height: 45%;
+    padding: 20px;
+}
+.section-2 .main-container .card .info > h2{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.section-2 .main-container .card .info > p{
+    font-size: 13px;
+    color: rgb(220, 211, 211);
+}
+.section-3{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1224;
+    color: #5e72e4;
+}
+.section-3 .caption{
+    width: 25%;
+    height: 100px;
+    text-align: center;
+}
+.section-3 .caption >h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #7069e5;
+}
+.section-3 .caption >p{
+    color: rgb(118, 118, 126);
+    font-size: 12px;
+}
+.section-3 .main-container{
+    width: 78%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main-container .left-code , .right-code{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(225, 223, 219);
+}
+.main-container .left-code >img{
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #7069e5;
+}
+
+.section-4{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1224;
+    color: #5e72e4;
+}
+.section-4 .caption{
+    width: 37%;
+    height: 100px;
+    text-align: center;
+}
+.section-4 .caption >h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #7069e5;
+}
+.section-4 .caption >p{
+    font-size: 15px;
+    color: rgb(196, 196, 210);
+}
+.section-4 .main-container{
+    width: 78%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-4 .main-container .card{
+    width: 30%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #6f69e592;
+    background-color: #11152c;
+}
+.section-4 .main-container .card .image{
+    width: 100%;
+    height: 35%;
+}
+.section-4 .main-container .card .image >img{
+    width: 100%;
+    height: 100%;
+}
+.section-4 .main-container .card .info{
+    width: 90%;
+    height: 55%;
+    padding: 20px;
+}
+.section-4 .main-container .card .info > h5{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.section-4 .main-container .card .info > p{
+    font-size: 13px;
+    color: rgb(121, 118, 118);
+}
+.section-4 .btn{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.section-4 .btn button{
+    width: 80px;
+    height: 30px;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #174f5dda;
+}
+
+.section-5{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1224;
+    color: #5e72e4;
+}
+.section-5 .caption{
+    width: 25%;
+    height: 100px;
+    text-align: center;
+}
+.section-5 .caption >h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #7069e5;
+}
+.section-5 .caption >p{
+    color: rgb(118, 118, 126);
+    font-size: 12px;
+}
+.section-5 .main-container{
+    width: 78%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-5 .main-container .left-code , .right-code{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(225, 223, 219);
+}
+.section-5 .main-container .left-code {
+    background-color: #11152c;
+    border-radius: 10px;
+    border: 1px solid #5e72e46b;
+}
+.section-5 .main-container .left-code .form{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+.section-5 .main-container .left-code .form >p{
+    font-size: 23px;
+    padding-bottom: 15px;
+}
+.section-5 .main-container .left-code .form > form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+.section-5 .main-container .left-code .form > form input,button {
+    width: 99%;
+    height: 40px;
+    padding: 10px;
+    background-color: #0d1224;
+    border-radius: 10px;
+    border:1px solid #5e72e46b;
+    outline: none;
+    color: aliceblue;
+}
+.section-5 .main-container .left-code .form > form >textarea {
+    width: 99%;
+    height: 100px;
+    padding: 10px;
+    background-color: #0d1224;
+    border-radius: 10px;
+    border:1px solid #5e72e46b;
+    outline: none;
+    color: aliceblue;
+}
+.section-5 .main-container .right-code >img{
+    width: 70%;
+}
+.section-5 .main-container .right-code .history-card{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.section-5 .main-container .right-code .history-card .main-body{
+    width: 20rem;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #5e72e46b;
+    background-color: #11152c;
+}
+.section-5 .main-container .right-code .history-card .main-body .left-part{
+    width: 60%;
+    height: 80%;
+    padding: 10px;
+    color: azure;
+}
+.section-5 .main-container .right-code .history-card .main-body .left-part h2{
+    color: #5e72e4;
+    font-weight: 500;
+}
+.section-5 .main-container .right-code .history-card .main-body .right-part{
+    width: 30%;
+    height: 80%;
+    padding: 10px;
+}
+.section-5 .main-container .right-code .history-card .main-body .right-part > img{
+    width: 60px;
+    height: auto;
+    background-color: #0d1224;
+    border-radius: 6px;
+}
